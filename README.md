@@ -1,6 +1,6 @@
 # Cisco Switch SSH Simulator
 
-A lightweight Cisco IOS CLI simulator for practicing UCSF-style IT Infrastructure interview tasks.
+A lightweight Cisco IOS CLI simulator for practicing UCXX-style IT Infrastructure interview tasks.
 
 ## Quick Start
 
