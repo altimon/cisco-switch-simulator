@@ -1,0 +1,46 @@
+{
+  "hostname": "cisco-lab-switch",
+  "version": "15.2(4)E7",
+  "vlans": {
+    "1":   "default",
+    "10":  "MGMT",
+    "20":  "SERVERS",
+    "30":  "STORAGE",
+    "40":  "RADIOLOGY",
+    "50":  "VMOTION",
+    "99":  "UNUSED",
+    "400": "SANDBOX_NET"
+  },
+  "ports": {
+    "Gi1/0/1":  {"description": "laptop",              "mode": "access", "access_vlan": 20,  "trunk_vlans": [],         "status": "connected",  "admin_down": false},
+    "Gi1/0/2":  {"description": "PACS workstation",    "mode": "access", "access_vlan": 20,  "trunk_vlans": [],         "status": "connected",  "admin_down": false},
+    "Gi1/0/3":  {"description": "NetApp data LIF",     "mode": "access", "access_vlan": 30,  "trunk_vlans": [],         "status": "connected",  "admin_down": false},
+    "Gi1/0/4":  {"description": "VMware host uplink",  "mode": "trunk",  "access_vlan": 1,   "trunk_vlans": [10,20,50], "status": "connected",  "admin_down": false},
+    "Gi1/0/5":  {"description": "Radiology server",    "mode": "access", "access_vlan": 40,  "trunk_vlans": [],         "status": "connected",  "admin_down": false},
+    "Gi1/0/6":  {"description": "printer",             "mode": "access", "access_vlan": 10,  "trunk_vlans": [],         "status": "connected",  "admin_down": false},
+    "Gi1/0/7":  {"description": "sandbox workstation", "mode": "access", "access_vlan": 400, "trunk_vlans": [],         "status": "connected",  "admin_down": false},
+    "Gi1/0/8":  {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/9":  {"description": "unused",              "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "admin down", "admin_down": true},
+    "Gi1/0/10": {"description": "",                    "mode": "access", "access_vlan": 10,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/11": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/12": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/13": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/14": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/15": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/16": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/17": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/18": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/19": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/20": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/21": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/22": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/23": {"description": "",                    "mode": "access", "access_vlan": 99,  "trunk_vlans": [],         "status": "notconnect", "admin_down": false},
+    "Gi1/0/24": {"description": "uplink",              "mode": "trunk",  "access_vlan": 1,   "trunk_vlans": [10,20,30], "status": "connected",  "admin_down": false}
+  },
+  "log_entries": [
+    "%SYS-5-CONFIG_I: Configured from console by vty0 (172.16.0.1)",
+    "%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/9, changed state to down",
+    "%LINK-3-UPDOWN: Interface GigabitEthernet1/0/8, changed state to down",
+    "%SYS-5-CONFIG_I: Configured from console by vty1 (192.168.1.5)"
+  ]
+}

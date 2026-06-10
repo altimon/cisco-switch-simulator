@@ -1,0 +1,18 @@
+[Unit]
+Description=Cisco Switch SSH Simulator
+After=network.target
+Documentation=file:///opt/cisco-sim/README.md
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/cisco-sim
+ExecStart=/usr/bin/python3 /opt/cisco-sim/simulator.py --port 2222
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cisco-sim
+
+[Install]
+WantedBy=multi-user.target

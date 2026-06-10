@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.claude/
+
+# Runtime files generated on the VM — not part of the repo
+ssh_host_key
+ssh_host_key.pub
+state_default.json
+scores.json
