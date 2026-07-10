@@ -22,7 +22,7 @@ ssh root@<vm-ip> "cd /tmp/cisco-sim-install && bash install_rocky.sh"
 
 ```bash
 ssh root@<vm-ip>
-# Password: cisco
+Demo-only password for local lab: cisco
 
 # If legacy KEX is required:
 ssh -oKexAlgorithms=+diffie-hellman-group14-sha1 root@<vm-ip>
@@ -30,7 +30,7 @@ ssh -oKexAlgorithms=+diffie-hellman-group14-sha1 root@<vm-ip>
 
 ---
 
-## Interview Workflow
+## Troubleshooting Workflow
 
 ```
 1.  ssh -oKexAlgorithms=+diffie-hellman-group14-sha1 root@<vm-ip>
